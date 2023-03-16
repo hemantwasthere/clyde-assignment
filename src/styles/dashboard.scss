@@ -1,0 +1,163 @@
+.outer-div {
+    height: 90vh;
+    background-color: #2C2C2C;
+    padding: 0 28px 0 28px;
+
+    .inner-div {
+        padding-top: 20px;
+
+        .user-info {
+            .name {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 20px;
+                color: #F3F3F3;
+                margin-top: 0px;
+            }
+
+            .branch {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FF8D24;
+                margin-top: -12px;
+
+                img {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .quick-actions {
+            margin-top: 20px;
+
+            p {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #F3F3F3;
+            }
+
+            .add-manage {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    background: #333333;
+                    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+                    border-radius: 16px;
+                    padding: 24px 25px 24px 25px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            .gym-branch,
+            .customer {
+                margin-top: 12px;
+                background: #333333;
+                box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+                border-radius: 16px;
+                padding: 24px 25px 24px 25px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .sales {
+            p {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #F3F3F3;
+            }
+
+            div {
+                background: #333333;
+                box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+                border-radius: 12px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 1px;
+                color: #FFFFFF;
+                padding: 12px 0 12px 20px;
+
+                p {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 1px;
+                    color: #9D9D9D;
+                    margin: 0;
+                }
+            }
+        }
+
+        .subscription {
+            p {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #F3F3F3;
+            }
+
+            div {
+                background: #333333;
+                box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+                border-radius: 16px;
+                padding: 24px 25px 24px 25px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+}
+
+.menubar {
+    height: 10vh;
+    background-color: #3F3F3F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 15px;
+            color: #9D9D9D;
+            margin: 6px 0 0 0;
+        }
+
+        .home {
+            color: #FF8D24;
+        }
+    }
+}
