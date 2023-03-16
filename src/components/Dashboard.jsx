@@ -74,6 +74,121 @@ function Dashboard() {
           <p>Profile</p>
         </div>
       </div>
+
+      <div className="dashboard-pc">
+        <div className="sidebar">
+          <div className="logo">
+            <img src="logo.svg" alt="" />
+            <p>
+              FI<span>T</span>NESS
+            </p>
+          </div>
+          <div className="menus">
+            <div>
+              <img src="dashboard.svg" alt="" />
+              <p>Dashboard</p>
+            </div>
+            <div>
+              <img src="members.svg" alt="" />
+              <p>Members</p>
+            </div>
+            <div>
+              <img src="exercise.svg" alt="" />
+              <p>Exercise Plans</p>
+            </div>
+            <div>
+              <img src="plan.svg" alt="" />
+              <p>Diet Plans</p>
+            </div>
+            <div>
+              <img src="profile.svg" alt="" />
+              <p>Profile</p>
+            </div>
+            <div>
+              <img src="logout.svg" alt="" />
+              <p>Logout</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="content">
+          <div className="sub-nav">
+            <div>
+              <h3>Dashboard</h3>
+              <p>Welcome back, Syeda!</p>
+            </div>
+            <div className="notification">
+              <img src="notification.svg" alt="" />
+              <img
+                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                alt=""
+                className="profile-img"
+              />
+            </div>
+          </div>
+
+          <div className="all-data">
+            <div className="data">
+              <div className="numbers">
+                <div className="revenue">
+                  <img src="revenue.svg" alt="" />
+                  <div>
+                    <h3>₹48,783.34</h3>
+                    <p>Total Revenue</p>
+                  </div>
+                </div>
+                <div className="sales">
+                  <img src="sales.svg" alt="" />
+                  <div>
+                    <h3>₹48,783.34</h3>
+                    <p>Total Sales</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="members">
+                <p>Members</p>
+                <img src="graph.svg" alt="" />
+              </div>
+            </div>
+
+            <div className="coming">
+              <img src="coming.svg" alt="" />
+            </div>
+          </div>
+
+          <div className="quick-actions">
+            <p className="quick">Quick Actions</p>
+
+            <div className="actions">
+              <div>
+                <p>Add Members</p>
+                <div>
+                  <img src="plus.svg" alt="" />
+                </div>
+              </div>
+              <div>
+                <p>Manage Staffs</p>
+                <div>
+                  <img src="people.svg" alt="" />
+                </div>
+              </div>
+              <div>
+                <p>Set Up Gym branch</p>
+                <div>
+                  <img src="setting.svg" alt="" />
+                </div>
+              </div>
+              <div>
+                <p>Manage Subscription Plans</p>
+                <div>
+                  <img src="subs.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
