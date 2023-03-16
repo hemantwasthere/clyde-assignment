@@ -1,13 +1,17 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth, logout } from "../firebase";
 import "../styles/dashboard.scss";
 
 function Dashboard() {
+  const [user] = useAuthState(auth);
+
   return (
     <>
       <div className="outer-div">
         <div className="inner-div">
           <div className="user-info">
-            <p className="name">Hey Name</p>
+            <p className="name">Hey {user.displayName}</p>
             <div className="branch">
               Banglore Branch
               <img src="dropdown.svg" alt="" />
@@ -104,7 +108,7 @@ function Dashboard() {
               <img src="profile.svg" alt="" />
               <p>Profile</p>
             </div>
-            <div>
+            <div onClick={logout}>
               <img src="logout.svg" alt="" />
               <p>Logout</p>
             </div>
@@ -115,15 +119,11 @@ function Dashboard() {
           <div className="sub-nav">
             <div>
               <h3>Dashboard</h3>
-              <p>Welcome back, Syeda!</p>
+              <p>Welcome back, {user.displayName}!</p>
             </div>
             <div className="notification">
               <img src="notification.svg" alt="" />
-              <img
-                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-                alt=""
-                className="profile-img"
-              />
+              <img src={user.photoURL} alt="" className="profile-img" />
             </div>
           </div>
 
